@@ -149,6 +149,14 @@ public class Nation implements NationInterface{
     @Override
     public String economy() {
         StringBuilder out = new StringBuilder();
-        return null;
+
+        // TODO: Show the other methods from Economy.java, after they work.
+
+        out.append("🏞 buy land\nCommand to buy land.\n")
+                .append("🌽 buy farm\nCommand to buy farms.\n")
+                .append("🧱 buy bs\nCommand to buy building supplies.\n")
+                .append("🏭 buy factory\nCommand to buy factories.\n");
+
+        return out.toString();
     }
 }
