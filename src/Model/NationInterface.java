@@ -64,4 +64,10 @@ public interface NationInterface {
      * @return The settings option for the nation.
      */
     public String settings();
+
+    /**
+     * Displays the menu with the economic commands for the nation.
+     * @return The economic commands for the nation.
+     */
+    public String economy();
 }

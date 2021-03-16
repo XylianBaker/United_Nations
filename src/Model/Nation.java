@@ -1,6 +1,48 @@
 package Model;
 
+/**
+ * This class contains all information about someones nation and it's statistics.
+ * @version 0.1
+ * @author Jan Kammellander
+ */
 public class Nation implements NationInterface{
+    // Nation attributes
+    private String name;
+    private String currency;
+    private String inhabitants;
+    private String militaryName;
+    private String airforceName;
+    private String navyName;
+    private Flag flag;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public void setInhabitants(String inhabitants) {
+        this.inhabitants = inhabitants;
+    }
+
+    public void setMilitaryName(String militaryName) {
+        this.militaryName = militaryName;
+    }
+
+    public void setAirforceName(String airforceName) {
+        this.airforceName = airforceName;
+    }
+
+    public void setNavyName(String navyName) {
+        this.navyName = navyName;
+    }
+
+    public void setFlag(Flag flag) {
+        this.flag = flag;
+    }
+
     /**
      * Displays all statistics of the nation or country.
      *
@@ -96,6 +138,16 @@ public class Nation implements NationInterface{
      */
     @Override
     public String settings() {
+        return null;
+    }
+
+    /**
+     * Displays the menu with the economic commands for the nation.
+     *
+     * @return The economic commands for the nation.
+     */
+    @Override
+    public String economy() {
         return null;
     }
 }
