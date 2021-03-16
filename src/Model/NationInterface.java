@@ -1,101 +1,67 @@
 package Model;
 
-public class Nation implements NationInterface{
+/**
+ * This class contains all information about someones nation and it's statistics.
+ * @version 0.1
+ * @author Jan Kammellander
+ */
+public interface NationInterface {
     /**
      * Displays all statistics of the nation or country.
-     *
      * @return Statistics of the nation or country.
      */
-    @Override
-    public String stats() {
-        return null;
-    }
+    public String stats();
 
     /**
      * Displays all commands available for the nation.
-     *
      * @return All available commands of the nation.
      */
-    @Override
-    public String help() {
-        return null;
-    }
+    public String help();
 
     /**
      * Updates the statistics of the nation.
      */
-    @Override
-    public void update() {
-
-    }
+    public void update();
 
     /**
      * This Method displays all cities within the nation and options for all of them.
-     *
      * @return All cities in the nation and the commands for them.
      */
-    @Override
-    public String cities() {
-        return null;
-    }
+    public String cities();
 
     /**
      * Displays the resource options of the nation.
-     *
      * @return The resource option of the nation.
      */
-    @Override
-    public String resource() {
-        return null;
-    }
+    public String resource();
 
     /**
      * Displays the military and all choices for them.
-     *
      * @return The military and the commands for them.
      */
-    @Override
-    public String military() {
-        return null;
-    }
+    public String military();
 
     /**
      * Displays the menu to customize the government.
-     *
      * @return Menu to customize the government.
      */
-    @Override
-    public String government() {
-        return null;
-    }
+    public String government();
 
     /**
      * Displays the diplomatic menu.
-     *
      * @return Menu for diplomacy.
      */
-    @Override
-    public String diplomacy() {
-        return null;
-    }
+    public String diplomacy();
 
     /**
      * Displays personalised options for the nation.
-     *
      * @return Personalised options for the nation.
      */
-    @Override
-    public String personalisation() {
-        return null;
-    }
+    public String personalisation();
 
     /**
      * Displays the settings option for the nation.
-     *
      * @return The settings option for the nation.
      */
-    @Override
-    public String settings() {
-        return null;
-    }
+    public String settings();
 }
