@@ -58,5 +58,5 @@ public interface EconomyInterface {
      * @param building The building to demolish.
      * @return Which building you destroyed.
      */
-    public String demolish(String building);
+    public String demolish(String building, int amount);
 }

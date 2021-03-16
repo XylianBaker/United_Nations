@@ -70,8 +70,8 @@ public class Economy implements EconomyInterface {
     @Override
     public String buyBrick(int amount) {
         buildingSupplies = amount;
-        return "You have just bought " + amount + " of building supplies 🧱.\n\nYou know own" +
-                buildingSupplies + "of building supplies 🏗.";
+        return "You have just bought " + amount + " of building supplies 🧱.\n\nYou know own " +
+                buildingSupplies + " of building supplies 🏗.";
     }
 
     /**
@@ -128,7 +128,19 @@ public class Economy implements EconomyInterface {
      * @return Which building you destroyed.
      */
     @Override
-    public String demolish(String building) {
-        return null;
+    public String demolish(String building, int amount) {
+        switch (building) {
+            case "land" -> {
+                land -= amount;
+                return "You just deleted " + amount + " of land🏞.";
+            }
+            case "farm" -> {
+                farm -= amount;
+                return "You just deleted " + amount + " of farms🌽.";
+            }
+            default -> {
+                return "The building doesn't exist!😒";
+            }
+        }
     }
 }
