@@ -6,6 +6,50 @@ package Model.nationInformation;
  * @author Jan Kammellander
  */
 public class Economy implements EconomyInterface{
+    private int land;
+    private int farm;
+    private int buildingSupplies;
+    private int factories;
+
+    public Economy() {
+        land = 1000;
+        farm = 0;
+        buildingSupplies = 0;
+        factories = 0;
+    }
+
+    public int getLand() {
+        return land;
+    }
+
+    public void setLand(int land) {
+        this.land = land;
+    }
+
+    public int getFarm() {
+        return farm;
+    }
+
+    public void setFarm(int farm) {
+        this.farm = farm;
+    }
+
+    public int getBuildingSupplies() {
+        return buildingSupplies;
+    }
+
+    public void setBuildingSupplies(int buildingSupplies) {
+        this.buildingSupplies = buildingSupplies;
+    }
+
+    public int getFactories() {
+        return factories;
+    }
+
+    public void setFactories(int factories) {
+        this.factories = factories;
+    }
+
     /**
      * Command to buy land.
      *
