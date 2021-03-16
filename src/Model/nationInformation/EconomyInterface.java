@@ -8,27 +8,31 @@ package Model.nationInformation;
 public interface EconomyInterface {
     /**
      * Command to buy land.
+     * @param amount The amount of land.
      * @return How much land someone bought.
      */
-    public String buyLand();
+    public String buyLand(int amount);
 
     /**
      * Command to buy farms.
+     * @param amount The amount of farms.
      * @return How much farms someone bought.
      */
-    public String buyFarm();
+    public String buyFarm(int amount);
 
     /**
      * Command to buy building supplies.
+     * @param amount The amount of building supplies.
      * @return How much building supplies someone bought.
      */
-    public String buyBrick();
+    public String buyBrick(int amount);
 
     /**
      * Command to buy factories.
+     * @param amount The amount of factories.
      * @return How much factories someone bought.
      */
-    public String buyFactory();
+    public String buyFactory(int amount);
 
     /**
      * Command to view the prices of the nation.
@@ -44,13 +48,15 @@ public interface EconomyInterface {
 
     /**
      * Command to pay someone else.
+     * @param amount The amount of money.
      * @return How much you paid to someone else.
      */
-    public String pay();
+    public String pay(int amount);
 
     /**
      * Command to demolish buildings.
+     * @param building The building to demolish.
      * @return Which building you destroyed.
      */
-    public String demolish();
+    public String demolish(String building);
 }

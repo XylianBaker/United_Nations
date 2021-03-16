@@ -5,12 +5,15 @@ package Model.nationInformation;
  * @version 0.1
  * @author Jan Kammellander
  */
-public class Economy implements EconomyInterface{
+public class Economy implements EconomyInterface {
     private int land;
     private int farm;
     private int buildingSupplies;
     private int factories;
 
+    /**
+     * Constructor
+     */
     public Economy() {
         land = 1000;
         farm = 0;
@@ -18,75 +21,47 @@ public class Economy implements EconomyInterface{
         factories = 0;
     }
 
-    public int getLand() {
-        return land;
-    }
-
-    public void setLand(int land) {
-        this.land = land;
-    }
-
-    public int getFarm() {
-        return farm;
-    }
-
-    public void setFarm(int farm) {
-        this.farm = farm;
-    }
-
-    public int getBuildingSupplies() {
-        return buildingSupplies;
-    }
-
-    public void setBuildingSupplies(int buildingSupplies) {
-        this.buildingSupplies = buildingSupplies;
-    }
-
-    public int getFactories() {
-        return factories;
-    }
-
-    public void setFactories(int factories) {
-        this.factories = factories;
-    }
-
     /**
      * Command to buy land.
      *
+     * @param amount The amount of land.
      * @return How much land someone bought.
      */
     @Override
-    public String buyLand() {
+    public String buyLand(int amount) {
         return null;
     }
 
     /**
      * Command to buy farms.
      *
+     * @param amount The amount of farms.
      * @return How much farms someone bought.
      */
     @Override
-    public String buyFarm() {
+    public String buyFarm(int amount) {
         return null;
     }
 
     /**
      * Command to buy building supplies.
      *
+     * @param amount The amount of building supplies.
      * @return How much building supplies someone bought.
      */
     @Override
-    public String buyBrick() {
+    public String buyBrick(int amount) {
         return null;
     }
 
     /**
      * Command to buy factories.
      *
+     * @param amount The amount of factories.
      * @return How much factories someone bought.
      */
     @Override
-    public String buyFactory() {
+    public String buyFactory(int amount) {
         return null;
     }
 
@@ -113,20 +88,22 @@ public class Economy implements EconomyInterface{
     /**
      * Command to pay someone else.
      *
+     * @param amount The amount of money.
      * @return How much you paid to someone else.
      */
     @Override
-    public String pay() {
+    public String pay(int amount) {
         return null;
     }
 
     /**
      * Command to demolish buildings.
      *
+     * @param building The building to demolish.
      * @return Which building you destroyed.
      */
     @Override
-    public String demolish() {
+    public String demolish(String building) {
         return null;
     }
 }
