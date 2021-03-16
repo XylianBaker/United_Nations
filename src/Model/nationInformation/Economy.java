@@ -29,7 +29,8 @@ public class Economy implements EconomyInterface {
      */
     @Override
     public String buyLand(int amount) {
-        return null;
+        land += amount;
+        return "You have just bought " + amount + " of land 🏔\n\nYou now own " + land + " of land 🏞";
     }
 
     /**
@@ -40,7 +41,8 @@ public class Economy implements EconomyInterface {
      */
     @Override
     public String buyFarm(int amount) {
-        return null;
+        farm += amount;
+        return "You have just bought " + amount + " of farms 🚜.\n\nYou now own " + farm + " of farmland 🌽.";
     }
 
     /**
@@ -51,7 +53,9 @@ public class Economy implements EconomyInterface {
      */
     @Override
     public String buyBrick(int amount) {
-        return null;
+        buildingSupplies = amount;
+        return "You have just bought " + amount + " of building supplies 🧱.\n\nYou know own" +
+                buildingSupplies + "of building supplies 🏗.";
     }
 
     /**
@@ -62,9 +66,11 @@ public class Economy implements EconomyInterface {
      */
     @Override
     public String buyFactory(int amount) {
-        return null;
+        factories = amount;
+        return "You have just bought " + amount + " of factories 👷‍♂.\n\nYou now own " + factories + " of factories 🏭.";
     }
 
+    // TODO: Make a class for the prices.
     /**
      * Command to view the prices of the nation.
      *
@@ -75,6 +81,7 @@ public class Economy implements EconomyInterface {
         return null;
     }
 
+    // TODO: Make a class for the blackmarket.
     /**
      * Command to display the black market of the nation.
      *
@@ -85,6 +92,7 @@ public class Economy implements EconomyInterface {
         return null;
     }
 
+    // TODO: Make the game a multiplayer.
     /**
      * Command to pay someone else.
      *
@@ -96,6 +104,7 @@ public class Economy implements EconomyInterface {
         return null;
     }
 
+    // TODO: find out what you want do demolish, maybe add a second parameter.
     /**
      * Command to demolish buildings.
      *
