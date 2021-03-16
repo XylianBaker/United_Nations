@@ -148,6 +148,7 @@ public class Nation implements NationInterface{
      */
     @Override
     public String economy() {
+        StringBuilder out = new StringBuilder();
         return null;
     }
 }

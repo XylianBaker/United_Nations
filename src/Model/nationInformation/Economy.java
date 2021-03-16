@@ -21,6 +21,22 @@ public class Economy implements EconomyInterface {
         factories = 0;
     }
 
+    public int getLand() {
+        return land;
+    }
+
+    public int getFarm() {
+        return farm;
+    }
+
+    public int getBuildingSupplies() {
+        return buildingSupplies;
+    }
+
+    public int getFactories() {
+        return factories;
+    }
+
     /**
      * Command to buy land.
      *
